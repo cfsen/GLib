@@ -8,7 +8,7 @@ using Dalamud.Interface.Utility.Raii;
 namespace GLib.Widgets; 
 
 public static class Buttons {
-	public static float CalcSize() => UiBuilder.IconFont.FontSize + ImGui.GetStyle().CellPadding.X * 2;
+	public static float CalcSize() => ImGui.GetFontSize() + ImGui.GetStyle().CellPadding.X * 2;
 	
 	public static bool IconButton(FontAwesomeIcon icon, Vector2? size = null) {
 		if (size == null) {
